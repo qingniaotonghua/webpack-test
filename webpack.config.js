@@ -1,9 +1,10 @@
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/entry.js',
   output: {
     path: './bin',
-    filename: 'app.bundle.js'
+    filename: 'bundle.js'
   },
+  devtool : 'source-map',
   module: {
     loaders: [{
       test: /\.js$/,
